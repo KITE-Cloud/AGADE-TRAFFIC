@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1404388623855" name="duplicate:http://www.semanticweb.org/timon/ontologies/2014/6/untitled-ontology-404"
+             uri="ImportingOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1404388623855" name="duplicate:http://www.semanticweb.org/timon/ontologies/2014/6/untitled-ontology-404"
+             uri="NewOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1404388623855" name="http://www.thm.de/sb/2014/InferenceLayer" uri="ImportedOntology.owl"/>
+    </group>
+</catalog>

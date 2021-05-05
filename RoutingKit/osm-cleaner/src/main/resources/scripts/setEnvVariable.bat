@@ -1,0 +1,7 @@
+
+
+setx AGADE_NEO4J_DATA "%1"
+setx AGADE_NEO4J_ADDR "%2"
+setx AGADE_RE_RMI_ADDR_SERVER "%3"
+setx AGADE_RE_RMI_ADDR_CLIENT "%4"
+exit

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>de.thm.mas</groupId>
+        <artifactId>routing-kit</artifactId>
+        <version>0.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>neo4J-plugin</artifactId>
+    <groupId>de.thm.mas</groupId>
+    <version>0.1</version>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.1.0</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.neo4j.driver</groupId>
+                        <artifactId>neo4j-java-driver</artifactId>
+                        <version>1.5.0-beta01</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j</artifactId>
+            <version>3.4.9</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.neo4j.procedure/apoc -->
+        <dependency>
+            <groupId>org.neo4j.procedure</groupId>
+            <artifactId>apoc</artifactId>
+            <version>3.4.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.neo4j.app</groupId>
+            <artifactId>neo4j-server</artifactId>
+            <version>3.3.0</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.tinkerpop</groupId>
+                    <artifactId>gremlin</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.neo4j</groupId>
+                    <artifactId>neo4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.neo4j</groupId>
+                    <artifactId>neo4j-com</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.neo4j</groupId>
+                    <artifactId>neo4j-backup</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.mortbay.jetty</groupId>
+                    <artifactId>jetty</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.jersey</groupId>
+                    <artifactId>jersey-server</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>commons-configuration</groupId>
+                    <artifactId>commons-configuration</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>de.huxhorn.lilith</groupId>
+                    <artifactId>de.huxhorn.lilith.3rdparty.rrd4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.jersey.contribs</groupId>
+                    <artifactId>jersey-multipart</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>org.apache.felix.main</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>org.apache.felix.fileinstall</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.neo4j</groupId>
+                    <artifactId>neo4j-shell</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-multipart</artifactId>
+            <version>2.26</version>
+        </dependency>
+    </dependencies>
+
+
+</project>

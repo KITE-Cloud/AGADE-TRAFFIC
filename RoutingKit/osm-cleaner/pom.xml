@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>routing-kit</artifactId>
+        <groupId>de.thm.mas</groupId>
+        <version>0.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>osm-cleaner</artifactId>
+
+    <!--Repos not accessible anymore see: https://developer.github.com/changes/2014-04-25-user-content-security/-->
+    <repositories>
+        <!--repository>
+            <id>neo4j-contrib-releases</id>
+            <url>https://github.com/neo4j-contrib/m2/tree/master/releases</url>
+            <url>https://raw.github.com/neo4j-contrib/m2/master/releases</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>neo4j-contrib-snapshots</id>
+            <url>https://github.com/neo4j-contrib/m2/tree/master/snapshots</url>
+            <url>https://raw.github.com/neo4j-contrib/m2/master/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository-->
+        <!--repository>
+            <id>neo4j-contrib-releases</id>
+            <url>https://raw.github.com/neo4j-contrib/m2/master/releases</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>neo4j-contrib-snapshots</id>
+            <url>https://raw.github.com/neo4j-contrib/m2/master/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository-->
+    </repositories>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.openstreetmap.osmosis/osmosis-xml -->
+        <dependency>
+            <groupId>org.openstreetmap.osmosis</groupId>
+            <artifactId>osmosis-xml</artifactId>
+            <version>0.46</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.openstreetmap.osmosis/osmosis-core -->
+        <dependency>
+            <groupId>org.openstreetmap.osmosis</groupId>
+            <artifactId>osmosis-core</artifactId>
+            <version>0.46</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.8.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.7</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j-spatial</artifactId>
+            <version>0.26.2-neo4j-3.5.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/neo4j-spatial-0.25.6-neo4j-3.4.5-server-plugin.jar
+            </systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j</artifactId>
+            <version>3.4.9</version>
+        </dependency>
+    </dependencies>
+
+</project>

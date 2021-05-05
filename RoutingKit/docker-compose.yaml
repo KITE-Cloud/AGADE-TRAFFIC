@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+  neo4j:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 7474:7474
+      - 7687:7687
+
+#  routing-engine:
+#    build:
+#      context: .
+#      dockerfile: routing-engine/Dockerfile
+#    ports:
+#      - 1099:1099
+#      - 1098:1098
+#    entrypoint: [ "/bin/bash", "/usr/src/app/routing-engine/docker-entrypoint.sh" ]
+#    restart: on-failure
+#    depends_on:
+#      - neo4j
+#    environment:
+#      - AGADE_NEO4J_ADDR=bolt://neo4j:7687
+#      - AGADE_RE_RMI_ADDR_SERVER=0.0.0.0
+
+
+

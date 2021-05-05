@@ -1,0 +1,28 @@
+#search {
+    z-index: 9990;
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    /*width: 260px;*/
+    height: auto;
+    padding: 6px;
+    border-radius: 4px;
+    transition: 0.5s all;
+}
+
+#search > button {
+    height: 29px !important;
+    border-radius: 2px !important;
+}
+
+#search input {
+    width: 195px;
+}
+
+#results {
+    font-style: sans-serif;
+    color: black;
+    font-size: 75%;
+    width: 200px;
+}

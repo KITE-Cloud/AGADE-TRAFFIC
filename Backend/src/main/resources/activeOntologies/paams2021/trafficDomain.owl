@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.thm.de/mnd/wbm/traffic#"
+     xml:base="http://www.thm.de/mnd/wbm/traffic"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.thm.de/mnd/wbm/traffic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#aversesVehicle -->
+
+    <owl:ObjectProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#aversesVehicle">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficObjectProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasTrafficObjectProperties -->
+
+    <owl:ObjectProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasTrafficObjectProperties"/>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#prefersVehicle -->
+
+    <owl:ObjectProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#prefersVehicle">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficObjectProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasArrivalDelay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasArrivalDelay">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasArrivedValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasArrivedValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasCalculatedTravelDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasCalculatedTravelDuration">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasCarAccess -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasCarAccess">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasCarsOnSameRoad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasCarsOnSameRoad">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasCongestionFactor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasCongestionFactor">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasDelayedStartTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasDelayedStartTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasExpectedArrivalTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasExpectedArrivalTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasHateFactorCarsOnRoad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasHateFactorCarsOnRoad">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasIntendedArrivalTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasIntendedArrivalTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasIntendedStartTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasIntendedStartTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasParkingCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasParkingCapacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasRemainingTravelDistance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasRemainingTravelDistance">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasTimePressureFactor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasTimePressureFactor">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasTotalTravelDistance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasTotalTravelDistance">
+        <rdfs:subPropertyOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.thm.de/mnd/wbm/traffic#hasTrafficProperties"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#AGADE_TrafficDomain -->
+
+    <owl:Class rdf:about="http://www.thm.de/mnd/wbm/traffic#AGADE_TrafficDomain"/>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#Bike -->
+
+    <owl:Class rdf:about="http://www.thm.de/mnd/wbm/traffic#Bike">
+        <rdfs:subClassOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#Car -->
+
+    <owl:Class rdf:about="http://www.thm.de/mnd/wbm/traffic#Car">
+        <rdfs:subClassOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#Feet -->
+
+    <owl:Class rdf:about="http://www.thm.de/mnd/wbm/traffic#Feet">
+        <rdfs:subClassOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#Location -->
+
+    <owl:Class rdf:about="http://www.thm.de/mnd/wbm/traffic#Location">
+        <rdfs:subClassOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#AGADE_TrafficDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#PublicTransport -->
+
+    <owl:Class rdf:about="http://www.thm.de/mnd/wbm/traffic#PublicTransport">
+        <rdfs:subClassOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.thm.de/mnd/wbm/traffic#Vehicle -->
+
+    <owl:Class rdf:about="http://www.thm.de/mnd/wbm/traffic#Vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.thm.de/mnd/wbm/traffic#AGADE_TrafficDomain"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

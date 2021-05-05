@@ -1,0 +1,966 @@
+body {
+    margin: 0px;
+!important padding: 0 px;
+!important font-family: Arial, Helvetica, sans-serif;
+}
+
+/*navbarStyle*/
+ul {
+
+    list-style-type: none;
+    margin: 0;
+!important padding: 0;
+!important overflow: hidden;
+    border: 1px solid #e7e7e7;
+/ / background-color: #f3f3f3;
+    background-color: #4CAF50;
+}
+
+li {
+    width: 100%;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    width: 100%;
+    font-size: 3em;
+    color: white;
+    background-color: #4CAF50;
+}
+
+/*navbarStyleEND*/
+
+/*footer style*/
+footer {
+    background-color: #394a59;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer p {
+    padding: 15px;
+    margin: 0px;
+    line-height: 100%;
+}
+
+/*footer style END */
+
+/*Button Style*/
+.button {
+    position: relative;
+    border: none;
+    background-color: #6d8940;
+    font-size: 21px;
+    color: #FFFFFF;
+    /* padding: 20px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.buttonSecondary {
+    background-color: #f1f1f1;
+    color: #6d8940;
+    border: 1px solid #6d8940;
+}
+
+.button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.button:hover {
+    background-color: #80ba24;
+}
+
+.buttonSide {
+    position: relative;
+    height: 22px;
+    /*background-color: #80ba24;*/
+    background-color: #575e67;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 5px;
+    width: 230px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.buttonSide:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.buttonSide:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.buttonSide:hover {
+    background-color: #749440;
+}
+
+/*Button Style END*/
+
+/*Range Slider (i.e. NumberOfCars)*/
+.slidecontainer {
+    width: 91%; /* Width of the outside container */
+
+    float: right;
+}
+
+/* The sliderRange itself */
+.sliderRange {
+    -webkit-appearance: none; /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #2d2d2d;
+!important /* Grey background */
+outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.sliderRange:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.sliderRange::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.sliderRange::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.sliderRange {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.sliderRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #80ba24;
+    cursor: pointer;
+}
+
+.sliderRange::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+/*Range Slider (i.e. NumberOfCars) END*/
+
+/*Sidebar*/
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #394a59;
+    overflow-x: hidden;
+    padding-top: 3em;
+    background-image: url('../images/backgrounds/road5.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    height: 100%;
+    margin-left: 250px;
+    min-margin-left: 250px;
+}
+
+/*Sidebar END*/
+
+/*Modal*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9990; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9991; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    /*overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    /* bottom: 0; */
+    background-color: #fefefe;
+    width: 100%;
+    height: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* The Close Button */
+.closeSettings {
+    color: white;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeSettings:hover,
+.closeSettings:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 7px 16px;
+    background-color: #394a59;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #394a59;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/*Modal END*/
+
+/*Select Box*/
+select#diagramPlot, select#diagramPlotCompare, select#chartType {
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    color: #555;
+    font-size: inherit;
+    margin-top: 13px;
+    margin-left: 10px;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 300px;
+}
+
+select#flip-1 {
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    color: #555;
+    font-size: inherit;
+    margin-top: 13px;
+    margin-left: 10px;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+/*Select Box END*/
+
+/*HeaderLogo*/
+#logoBox {
+    border: 7px solid white;
+    margin-left: 16px;
+    margin-right: 20px;
+    padding-top: 31px;
+    padding-bottom: 8px;
+
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+#logoBox #headerLogo {
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+#headerLogo {
+    background-image: url('../images/icons/kite2.png');
+    background-size: 75px 75px !important;
+}
+
+#logoBox:hover {
+    color: #80ba24;
+    border: 7px solid #80ba24;
+!important
+}
+
+#logoBox:hover #headerLogo {
+    background-image: url("../images/icons/kite3.png");
+    background-size: 75px 75px !important;
+    z-index: 99999 !important;
+
+}
+
+/*HeaderLogoEND*/
+
+/* Matrix Settings */
+#settingsBox {
+    float: left;
+    overflow: auto;
+    height: 600px;
+}
+
+#destinationMatSetting {
+    height: 85vh;
+
+}
+
+#tabSettingsBox {
+    width: auto;
+    height: 50%;
+}
+
+.tableHeader {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+/* Matrix Settings END */
+
+.timer {
+    width: 50px;
+    text-align: center;
+    background: #2f3c44;
+    opacity: 0.9;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    /*	bottom: 20px;
+       left: 270px;
+       position: absolute; */
+    margin-left: 82px;
+    margin-bottom: 20px;
+    z-index: 400;
+}
+
+.control-button {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    width: 113px;
+    align: center;
+}
+
+/* basic positioning */
+.legend {
+    list-style: none;
+    text-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 10px;
+    left: 260px;
+    z-index: 400;
+    width: 150px;
+    border-radius: 10px;
+    display: none;
+}
+
+.legend li {
+    float: left;
+    margin-right: 10px;
+}
+
+.legend span {
+    border: 1px solid #ccc;
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 2px;
+}
+
+/* your colors */
+
+.legend .smaller10 {
+    background-color: #00c7ff;
+}
+
+.legend .smaller20 {
+    background-color: #004b60;
+}
+
+.legend .smaller30 {
+    background-color: #19d800;
+}
+
+.legend .smaller50 {
+    background-color: #0a6000;
+}
+
+.legend .smaller60 {
+    background-color: #ffe900;
+}
+
+.legend .smaller70 {
+    background-color: #fc8a00;
+}
+
+.legend .smaller80 {
+    background-color: #8e4e00;
+}
+
+.legend .smaller100 {
+    background-color: #44bdff;
+}
+
+.legend .smaller120 {
+    background-color: #0091e0;
+}
+
+.legend .greater120 {
+    background-color: #041b77;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.to-wrapper {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 1em;
+    font-size: 30px;
+    margin: 3px;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.to-wrapper:hover {
+    background-color: #80ba24;
+
+}
+
+
+/* Table Styles */
+.table-wrapper {
+    margin: 30px 0px;
+    box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #6d8940;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #394a59;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+
+    .table-wrapper:before {
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+
+    .fl-table thead th:last-child {
+        border-bottom: none;
+    }
+
+    .fl-table thead {
+        float: left;
+    }
+
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+
+.sidebuttonHalfLeft {
+    float: left;
+    margin-left: 10px;
+    width: 110px;
+}
+
+.sidebuttonHalfRight {
+    width: 110px;
+    margin-left: auto;
+}
+
+.dttRowElement {
+    float: left;
+}
+
+#myModalNotification {
+    z-index: 10000;
+}
+
+.modalSelectionItemIcon {
+    width: 100%;
+}
+
+.leaflet-touch .leaflet-draw-actions a {
+    line-height: 7px !important;
+}
+
+.customPersonaContainer {
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+    background: #f1f1f1;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#agentFilter {
+    position: absolute;
+    top: 16px;
+    right: 285px;
+    height: 42px;
+    border-radius: 4px;
+    transition: 0.5s all;
+    text-align: left;
+    outline: none;
+    z-index: 9988;
+}
+
+.accordion {
+    border: none;
+    padding: 6px;
+    border-radius: 4px;
+    transition: 0.5s all;
+    text-align: left;
+    outline: none;
+    width: auto;
+    float: right;
+    background-color: #575e67;
+    color: white;
+    height: 41px;
+}
+
+.accordion:hover {
+    background-color: #6d8940;
+}
+
+.panel {
+    padding: 42px 18px;
+    display: none;
+    width: 60vw;
+    border-radius: 4px;
+    height: auto;
+    transition: 0.5s all;
+    background: white;
+    max-height: 95vh;
+    overflow: auto;
+}
+
+#agentFilterButtons {
+    text-align: right;
+}
+
+
+.filterDelete {
+    margin-right: 5px;
+    transition: 1s all;
+    background-image: url("../images/icons/delete.svg");
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+}
+
+.filterDelete:hover {
+    background-image: url("../images/icons/deleteRED.svg");
+}
+
+.comp-accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1em;
+    margin: 0.2em;
+
+}
+
+.comp-active, .comp-accordion:hover {
+    background-color: #ccc;
+}
+
+.comp-panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 1em;
+}
+
+.leaflet-touch .leaflet-draw-toolbar .leaflet-draw-draw-polyline {
+    /*control icon: traffic signs*/
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100%' width='100%'><text x='7' y='20' fill='black' font-size='15'>\26D6</text></svg>");
+}

@@ -1,0 +1,1606 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.thm.de/sb/2014/InferenceLayer"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.thm.de/sb/2014/InferenceLayer">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Brand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Color"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeographicalArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Incident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracticeArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Problem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProblematicThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Repair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Repairman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Report"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TextDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Topic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nextPlan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToTopic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bestPractice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canBeCarriedOutBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canBeHelpedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canCarryOut"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canHelpWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dependsOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#describes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBrand"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExpert"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNextPlan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProblematicComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSolutionStep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubProblem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubtopic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAbout"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAcquaintedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBrandOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isColorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExpertIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFeatureOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMadeIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProblematicComponentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProduceAreaOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isReferredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRelatedTopicOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRelevantFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSoldBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSolutionStepOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSolvedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubProblemOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubtopicOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSymptomOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSymptomShownBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mayBeCausedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mayBeProblemOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mayCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mayHaveHappenedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mayHaveSolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mayHaveSuffered"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#maySolve"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#maySufferFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#recommendedReport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#refersTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sells"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#showsSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#solves"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHapinessValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Africa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AskForRecommendation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Australia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Black"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Blue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BuyNewOne"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Europe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gray"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NorthAmerica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Orange"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Silver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SouthAmerica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#White"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#translation"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Expert"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isExpertIn"/>
+                <Class IRI="#Topic"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ProblematicThing"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#ProblematicThing"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#maySufferFrom"/>
+                <Class IRI="#Problem"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Continent"/>
+        <Class IRI="#GeographicalArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Expert"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canHelpWith"/>
+            <Class IRI="#Problem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plan"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#belongsToTopic"/>
+            <Class IRI="#Topic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Problem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#belongsToTopic"/>
+            <Class IRI="#Topic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Repair"/>
+        <Class IRI="#Plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Repairman"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Repairman"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canCarryOut"/>
+            <Class IRI="#Repair"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seller"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Solution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#solves"/>
+            <ObjectUnionOf>
+                <Class IRI="#Cause"/>
+                <Class IRI="#Problem"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Symptom"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSymptomOf"/>
+            <Class IRI="#Problem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nextPlan"/>
+        <Class IRI="#Plan"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Cause"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Color"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Component"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Continent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Fact"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Feature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#GeographicalArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Incident"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Plan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#PracticeArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Problem"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Report"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Color"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Component"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Continent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Fact"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Feature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cause"/>
+        <Class IRI="#GeographicalArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Plan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cause"/>
+        <Class IRI="#PracticeArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Report"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cause"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#Component"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#Continent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#Fact"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#Feature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#GeographicalArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#Incident"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#Plan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#PracticeArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#Problem"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#Report"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Color"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#Continent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#Fact"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#Feature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#GeographicalArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#Incident"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#Plan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#PracticeArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#Problem"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#Report"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Component"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Fact"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Feature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Plan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Continent"/>
+        <Class IRI="#PracticeArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Problem"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Report"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Continent"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fact"/>
+        <Class IRI="#Feature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fact"/>
+        <Class IRI="#GeographicalArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fact"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fact"/>
+        <Class IRI="#Plan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fact"/>
+        <Class IRI="#PracticeArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fact"/>
+        <Class IRI="#Problem"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fact"/>
+        <Class IRI="#Report"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fact"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fact"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fact"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Feature"/>
+        <Class IRI="#GeographicalArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Feature"/>
+        <Class IRI="#Incident"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Feature"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Feature"/>
+        <Class IRI="#Plan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Feature"/>
+        <Class IRI="#PracticeArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Feature"/>
+        <Class IRI="#Problem"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Feature"/>
+        <Class IRI="#Report"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Feature"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Feature"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Feature"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GeographicalArea"/>
+        <Class IRI="#Incident"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GeographicalArea"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GeographicalArea"/>
+        <Class IRI="#Plan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GeographicalArea"/>
+        <Class IRI="#PracticeArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GeographicalArea"/>
+        <Class IRI="#Problem"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GeographicalArea"/>
+        <Class IRI="#Report"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GeographicalArea"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GeographicalArea"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GeographicalArea"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Incident"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Incident"/>
+        <Class IRI="#Plan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Incident"/>
+        <Class IRI="#PracticeArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Incident"/>
+        <Class IRI="#Report"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Incident"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Incident"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Person"/>
+        <Class IRI="#Plan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Person"/>
+        <Class IRI="#PracticeArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Person"/>
+        <Class IRI="#Problem"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Person"/>
+        <Class IRI="#Report"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Person"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Person"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Person"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Plan"/>
+        <Class IRI="#PracticeArea"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Plan"/>
+        <Class IRI="#Problem"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Plan"/>
+        <Class IRI="#Report"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Plan"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Plan"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Plan"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PracticeArea"/>
+        <Class IRI="#Problem"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PracticeArea"/>
+        <Class IRI="#Report"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PracticeArea"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PracticeArea"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PracticeArea"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Problem"/>
+        <Class IRI="#Report"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Problem"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Problem"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Problem"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Report"/>
+        <Class IRI="#Symptom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Report"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Report"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Symptom"/>
+        <Class IRI="#TextDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Symptom"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TextDocument"/>
+        <Class IRI="#Topic"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Asia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plan"/>
+        <NamedIndividual IRI="#AskForRecommendation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#Black"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#Blue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Plan"/>
+        <NamedIndividual IRI="#BuyNewOne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Solution"/>
+        <NamedIndividual IRI="#BuyNewOne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Europe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#Gray"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#NorthAmerica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#Orange"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#Red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#Silver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#SouthAmerica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Color"/>
+        <NamedIndividual IRI="#White"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Africa"/>
+        <NamedIndividual IRI="#Asia"/>
+        <NamedIndividual IRI="#Australia"/>
+        <NamedIndividual IRI="#Black"/>
+        <NamedIndividual IRI="#Blue"/>
+        <NamedIndividual IRI="#BuyNewOne"/>
+        <NamedIndividual IRI="#Europe"/>
+        <NamedIndividual IRI="#Gray"/>
+        <NamedIndividual IRI="#NorthAmerica"/>
+        <NamedIndividual IRI="#Orange"/>
+        <NamedIndividual IRI="#Red"/>
+        <NamedIndividual IRI="#Silver"/>
+        <NamedIndividual IRI="#SouthAmerica"/>
+        <NamedIndividual IRI="#White"/>
+    </DifferentIndividuals>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#canBeHelpedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFeature"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProblematicComponent"/>
+        <ObjectProperty IRI="#hasComponent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isProblematicComponentOf"/>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isRelatedTopicOf"/>
+        <ObjectProperty IRI="#belongsToTopic"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#canCarryOut"/>
+        <ObjectProperty IRI="#canBeCarriedOutBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#canBeHelpedBy"/>
+        <ObjectProperty IRI="#canHelpWith"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isBrandOf"/>
+        <ObjectProperty IRI="#hasBrand"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasColor"/>
+        <ObjectProperty IRI="#isColorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasComponent"/>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasExpert"/>
+        <ObjectProperty IRI="#isExpertIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFeature"/>
+        <ObjectProperty IRI="#isFeatureOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasProblematicComponent"/>
+        <ObjectProperty IRI="#isProblematicComponentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSolutionStep"/>
+        <ObjectProperty IRI="#isSolutionStepOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSubProblem"/>
+        <ObjectProperty IRI="#isSubProblemOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSubtopicOf"/>
+        <ObjectProperty IRI="#hasSubtopic"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSymptomOf"/>
+        <ObjectProperty IRI="#hasSymptom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isProduceAreaOf"/>
+        <ObjectProperty IRI="#isMadeIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#refersTo"/>
+        <ObjectProperty IRI="#isReferredBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSoldBy"/>
+        <ObjectProperty IRI="#sells"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSolvedBy"/>
+        <ObjectProperty IRI="#solves"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#showsSymptom"/>
+        <ObjectProperty IRI="#isSymptomShownBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#mayBeCausedBy"/>
+        <ObjectProperty IRI="#mayCause"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#mayBeProblemOf"/>
+        <ObjectProperty IRI="#maySufferFrom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#mayHaveSuffered"/>
+        <ObjectProperty IRI="#mayHaveHappenedTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#maySolve"/>
+        <ObjectProperty IRI="#mayHaveSolution"/>
+    </InverseObjectProperties>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#canBeCarriedOutBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#canCarryOut"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasBrand"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasColor"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isBrandOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isColorOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isExpertIn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isMadeIn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isProduceAreaOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#mayHaveHappenedTo"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#mayHaveSuffered"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#sells"/>
+    </AsymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#belongsToTopic"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasSolutionStep"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasSubProblem"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasSubtopic"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isRelatedTopicOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isSolutionStepOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isSubProblemOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isSubtopicOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#mayBeCausedBy"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#mayCause"/>
+    </TransitiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#sells"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#bestPractice"/>
+        <Class IRI="#Report"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canCarryOut"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canHelpWith"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dependsOn"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNextPlan"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProduct"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSolutionStep"/>
+        <Class IRI="#Solution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAbout"/>
+        <Class IRI="#Fact"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAcquaintedWith"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isExpertIn"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProblematicComponentOf"/>
+        <Class IRI="#ProblematicThing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProduceAreaOf"/>
+        <Class IRI="#GeographicalArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRelevantFor"/>
+        <Class IRI="#Topic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSolvedBy"/>
+        <ObjectUnionOf>
+            <Class IRI="#Cause"/>
+            <Class IRI="#Problem"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubProblemOf"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubtopicOf"/>
+        <Class IRI="#Topic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSymptomOf"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mayCause"/>
+        <Class IRI="#Cause"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mayHaveHappenedTo"/>
+        <Class IRI="#Incident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mayHaveSolution"/>
+        <ObjectUnionOf>
+            <Class IRI="#Cause"/>
+            <Class IRI="#Problem"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#maySolve"/>
+        <Class IRI="#Solution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#recommendedReport"/>
+        <Class IRI="#Report"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sells"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#solves"/>
+        <Class IRI="#Solution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToTopic"/>
+        <Class IRI="#Topic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bestPractice"/>
+        <Class IRI="#PracticeArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canCarryOut"/>
+        <Class IRI="#Plan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canHelpWith"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dependsOn"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNextPlan"/>
+        <Class IRI="#Plan"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProblematicComponent"/>
+        <Class IRI="#ProblematicThing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSolutionStep"/>
+        <Class IRI="#Solution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAbout"/>
+        <Class IRI="#Topic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAcquaintedWith"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isExpertIn"/>
+        <Class IRI="#Topic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMadeIn"/>
+        <Class IRI="#GeographicalArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRelevantFor"/>
+        <Class IRI="#PracticeArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSolvedBy"/>
+        <Class IRI="#Solution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubProblemOf"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubtopicOf"/>
+        <Class IRI="#Topic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSymptomOf"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mayCause"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mayHaveSolution"/>
+        <Class IRI="#Solution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mayHaveSuffered"/>
+        <Class IRI="#Incident"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#maySolve"/>
+        <ObjectUnionOf>
+            <Class IRI="#Cause"/>
+            <Class IRI="#Problem"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#maySufferFrom"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#recommendedReport"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sells"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#showsSymptom"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#solves"/>
+        <ObjectUnionOf>
+            <Class IRI="#Cause"/>
+            <Class IRI="#Problem"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHapinessValue"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHapinessValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Expert"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Problem"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Topic"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#belongsToTopic"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isExpertIn"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canHelpWith"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Incident"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#mayBeCausedBy"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#maySufferFrom"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#mayHaveSuffered"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Problem"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#mayBeProblemOf"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#solves"/>
+                <NamedIndividual IRI="#BuyNewOne"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#refersTo"/>
+                <NamedIndividual IRI="#BuyNewOne"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Problem"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Symptom"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSymptomOf"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#showsSymptom"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#maySufferFrom"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#ProblematicThing"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasComponent"/>
+                    <Class IRI="#ProblematicThing"/>
+                </ObjectSomeValuesFrom>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasProblematicComponent"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Repair"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Repairman"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Topic"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#belongsToTopic"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isExpertIn"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canCarryOut"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataRangeAtom>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="&xsd;maxExclusive">
+                        <Literal datatypeIRI="&xsd;integer">20</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+                <Variable IRI="urn:swrl#y"/>
+            </DataRangeAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasHapinessValue"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNextPlan"/>
+                <Variable IRI="urn:swrl#x"/>
+                <NamedIndividual IRI="#BuyNewOne"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fact</IRI>
+        <Literal datatypeIRI="&xsd;string">corresponds with -thing- in Documento_completo.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Problem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">corresponds to -Abstract Symptom- in psm_template</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
