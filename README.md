@@ -18,7 +18,7 @@ AGADE Traffic is an agent based traffic simulator written in Java. Main objectiv
 * Start `RoutingKit/osm-cleaner/src/main/java/application/SetupManagerApplication.main()`. On first startup `SetupManagerApplication` creates important environmental variables that are required for connecting service modules. You will need to restart Java to detect changes.  
 
 ### Data Preprocessing and Import
-* Manually select a map area at [openstreetmap.org](https://www.openstreetmap.org/export) and use `overpass API` to download necessary osm data for your simulation
+* Manually select a map area at [openstreetmap](https://www.openstreetmap.org/export) and use `overpass API` to download necessary osm data for your simulation
 * Rename the downloaded file and add  `.osm` file ending e.g. `london.osm`
 * Place osm data in `{ProjectDir}/RoutingKit/osm-cleaner/src/main/resources/OSM_Files/`
 * Launch `SetupManagerApplication` to select your osm file and clean your osm data. This produces a new osm file e.g. `london_cleaned.osm` in the same directory. 
