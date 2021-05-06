@@ -29,8 +29,10 @@ AGADE Traffic is an agent based traffic simulator written in Java. Main objectiv
 
 ##### For End-Users
 * Open a terminal and navigate to your project directory
-* Startup AGADE Traffic Services by typing `docker-compose up`
+* Startup AGADE Traffic Services (Neo4j, RoutingEngine and Backend) by typing `docker-compose up`
 * On first startup project build must be completed. Project build will be cached which makes startup of subsequent sessions faster.
+* You will have to start AGADE Traffic Frontend separately. In the `Frontend` project, launch `src/main/java/de/thm/agade/frontend/FrontendApplication.main()`
+* Open `localhost:8081` in your browser 
 
 ##### For Developers
 For developers working with AGADE Traffic we recommend starting up services separately. 
