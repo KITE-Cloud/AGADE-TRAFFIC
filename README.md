@@ -13,7 +13,7 @@ AGADE Traffic is an agent based traffic simulator written in Java. Main objectiv
 ![platform](https://img.shields.io/badge/platform-linux%20|%20windows%20|%20osx-darkgreen) ![java](https://img.shields.io/badge/java-8-blue) ![build](https://img.shields.io/badge/build-maven-red) ![virtualisation](https://img.shields.io/badge/virtualisation-docker-lightblue)
 
 ### Initial Setup
-* Create a local repository using `git clone https://github.com/KITECloud/AGADE-Traffic.git`
+* Create a local repository using `git clone https://github.com/KITE-Cloud/AGADE-TRAFFIC.git` 
 * Open `Frontend`, `Backend` and `RoutingKit` as separate Maven projects in your IDE.
 * Start `RoutingKit/osm-cleaner/src/main/java/application/SetupManagerApplication.main()`. On first startup `SetupManagerApplication` creates important environmental variables that are required for connecting service modules. You will need to restart Java to detect changes.  
 
