@@ -20,11 +20,11 @@ ENV NEO4J_dbms_connector_bolt_thread__pool__max__size=100000
 ENV NEO4J_dbms_memory_heap_max__size=40G
 #ENV NEO4J_dbms_memory_pagecache_size=90G
 #ENV NEO4J_dbms_memory_heap_initial__size=90G
-ENV JVM_OPTS="-Xmx40g -Xms2g"
+ENV JVM_OPTS="-Xmx4g -Xms2g"
 #-XX:MaxPermSize=20G
 
 COPY --from=build /usr/src/app/neo4J-plugin/target/neo4J-plugin-0.1.jar /var/lib/neo4j/plugins
-COPY neo4J-plugin/src/main/resources/neo4j-spatial-0.25.6-neo4j-3.4.5-server-plugin.jar /var/lib/neo4j/plugins
+COPY osm-cleaner/src/main/resources/neo4j-spatial-0.25.6-neo4j-3.4.5-server-plugin.jar /var/lib/neo4j/plugins
 COPY osm-cleaner/src/main/resources/neo4j-data/graph.db /var/lib/neo4j/data/databases/graph.db
 #RUN find /var/lib/neo4j/data
 #RUN ulimit -c unlimited
